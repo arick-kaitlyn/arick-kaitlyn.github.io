@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px 0 0 0;
+    
+}
+
+nav ul li {
+    list-style: none;
+    width: 30%;
+    background-color: #00afef;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    font-weight: bold;
+
+}
+
+header>div#heading img {
+    height: 100px;
+    width: auto;
+}
+
+#Resume img {
+    height: 150px;
+    width: auto;
+}
+
+header>div#heading h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+main img {
+    object-fit: cover;
+    margin-right: 20px;
+    height: 350px;
+    width: 35%;
+}
+
+main #about-list li{
+    padding-bottom: 5px;
+}
+main #f#about-list li:before {
+    content: '🎮';
+    margin-left: -31px;
+    padding-right: 8px;
+}
+
+section, footer {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+#main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header nav"
+    "about about"
+    "resume side"
+    "footer footer";
+    gap: 10px 10px;
+}
+
+#contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header nav"
+    "form form"
+    "footer footer";
+    gap: 10px 10px;
+}
+
+
+#heading {
+    grid-area: header;
+    display: flex;
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+nav {
+    grid-area: nav;
+    flex-grow: 1;
+
+}
+
+#site-nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    height: 20%;
+    padding-bottom: 20px;
+
+}
+
+#about {
+    grid-area: about;
+    display: flex;
+    align-items: center;
+    
+}
+
+#Resume {
+    grid-area: resume;
+    display: flex;
+    align-items: center;
+    
+}
+
+#Resume #resume-list{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#resume-list h2 {
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+#resume-list p {
+    align-items: flex-end;
+    flex-grow: 1;
+    text-align: left;
+}
+
+
+#Side {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Side p {
+     align-items: flex-start;
+     flex-grow: 1;
+     text-align: left;
+}
+
+#form {
+    grid-area: form;
+    flex-grow: 1;
+}
+
+footer {
+    grid-area: footer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
